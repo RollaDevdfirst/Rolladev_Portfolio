@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — RollaDev | Start a Project</title>
+<meta name="description" content="Get in touch with RollaDev to start your website project. Tell me about your business and I'll respond with next steps.">
+<meta property="og:title" content="Contact — RollaDev | Start a Project">
+<meta property="og:description" content="Get in touch with RollaDev to start your website project.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rolladev.com.ng/contact.html">
+<meta property="og:image" content="https://rolladev.com.ng/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — RollaDev | Start a Project">
+<meta name="twitter:description" content="Get in touch with RollaDev to start your website project.">
+<meta name="twitter:image" content="https://rolladev.com.ng/og-cover.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://rolladev.com.ng/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Ambient background particles, subtle drifting circles. See style.css ".particles" comment to remove. -->
+<div class="particles" aria-hidden="true">
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#pricing">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+  <a href="contact.html" class="btn btn-mono" aria-current="page">$ start_project</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE INTRO ============ -->
+  <section class="page-intro">
+    <p class="eyebrow reveal">// contact</p>
+    <h1 class="reveal">Let's start your project</h1>
+    <p class="hero-sub reveal">
+      Tell me a bit about your business and what you need. I read every message myself and reply honestly,
+      even if the answer is "this isn't the right fit."
+    </p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <!--
+        FORM SUBMISSION: this form is fully styled and validated on the frontend,
+        but does not send anywhere yet. Wire it up one of two ways:
+          1. Firebase: write the submission to a Firestore collection (e.g. "inquiries")
+             inside the form's submit handler in script.js.
+          2. EmailJS: init with your own service ID, template ID, and public key,
+             then call emailjs.send() inside the same handler.
+        The handler stub is already in script.js, marked "CONTACT FORM SUBMISSION".
+      -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="projectType">What do you need?</label>
+          <select id="projectType" name="projectType" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="landing">Landing Page</option>
+            <option value="full">Full Business Website</option>
+            <option value="custom">Custom Build</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tell me about your business</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-side">
+        <div class="contact-card">
+          <p class="eyebrow">// direct</p>
+          <h3>Prefer WhatsApp?</h3>
+          <p>Skip the form and message me directly, I usually reply within a few hours.</p>
+          <!-- Pre-filled starter message, edit the text after ?text= in script.js's WHATSAPP_NUMBER section if you want to change it -->
+          <a href="https://wa.me/2348111845134?text=Hi%2C%20I%27d%20like%20to%20start%20a%20project%20with%20RollaDev." target="_blank" rel="noopener" class="mono-link">Chat on WhatsApp &rarr;</a>
+        </div>
+        <div class="contact-card">
+          <p class="eyebrow">// response time</p>
+          <h3>What happens next</h3>
+          <p>You'll get a reply with a few questions, then a straightforward quote based on what you actually need, no pressure, no upsell.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="services.html#pricing">Pricing</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 RollaDev. All rights reserved.</span>
+    <span class="mono">contact</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

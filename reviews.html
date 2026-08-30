@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews — RollaDev | Client Feedback</title>
+<meta name="description" content="Client reviews for RollaDev web development projects.">
+<meta property="og:title" content="Reviews — RollaDev">
+<meta property="og:description" content="Client reviews for RollaDev web development projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rolladev.com.ng/reviews.html">
+<meta property="og:image" content="https://rolladev.com.ng/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reviews — RollaDev">
+<meta name="twitter:description" content="Client reviews for RollaDev web development projects.">
+<meta name="twitter:image" content="https://rolladev.com.ng/og-cover.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://rolladev.com.ng/reviews.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Ambient background particles, subtle drifting circles. See style.css ".particles" comment to remove. -->
+<div class="particles" aria-hidden="true">
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+  <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#pricing">Pricing</a>
+    <a href="reviews.html" aria-current="page">Reviews</a>
+  </nav>
+  <a href="contact.html" class="btn btn-mono">$ start_project</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE INTRO ============ -->
+  <section class="page-intro">
+    <p class="eyebrow reveal">// reviews</p>
+    <h1 class="reveal">Client reviews</h1>
+    <p class="hero-sub reveal">
+      Real feedback from real projects, shown here as it comes in.
+    </p>
+  </section>
+
+  <!-- ============ REVIEWS GRID / EMPTY STATE ============ -->
+  <!--
+    THIS SECTION HAS TWO STATES.
+    Right now, .review-grid is empty and .reviews-empty is shown.
+    Once you have real reviews, or the review system is live:
+      1. Add .review-card elements inside .review-grid (see work.html's
+         project-card-lg for the same card pattern, or copy structure below).
+      2. Delete or hide the .reviews-empty block.
+  -->
+  <section class="reviews-full">
+    <div class="review-grid" id="reviewGrid">
+      <!-- Example structure for when a real review is added:
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The review text goes here."</p>
+        <span class="review-name">— Client name, Business name</span>
+      </div>
+      -->
+    </div>
+
+    <div class="reviews-empty reveal">
+      <p class="eyebrow">// status</p>
+      <h2>No reviews published yet</h2>
+      <p>
+        Reviews will appear here as recent projects wrap up and clients share their feedback.
+        In the meantime, you can see the actual work below.
+      </p>
+      <a href="work.html" class="btn btn-ghost">View recent projects &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta reveal">
+    <h2>Worked with me recently?</h2>
+    <p>I'd genuinely appreciate a review, reach out and I'll send you where to leave one.</p>
+    <a href="contact.html" class="btn btn-primary">Get in touch</a>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="services.html#pricing">Pricing</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 RollaDev. All rights reserved.</span>
+    <span class="mono">reviews</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
