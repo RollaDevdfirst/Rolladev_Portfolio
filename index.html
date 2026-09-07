@@ -15,16 +15,13 @@
 <meta name="twitter:title" content="RollaDev — Web Developer for Growing Businesses">
 <meta name="twitter:description" content="Fast, modern, SEO-ready websites for small businesses.">
 <meta name="twitter:image" content="https://rolladev.com.ng/og-cover.jpg">
-
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://rolladev.com.ng/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <!-- Ambient background particles, subtle drifting circles. See style.css ".particles" comment to remove. -->
@@ -39,9 +36,8 @@
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+  <a href="#" class="logo">Rolla<span>Dev</span></a>
   <nav class="nav-links" id="navLinks">
-    <a href="index.html" aria-current="page">Home</a>
     <a href="work.html">Work</a>
     <a href="services.html">Services</a>
     <a href="services.html#pricing">Pricing</a>
@@ -64,7 +60,7 @@
     </h1>
     <p class="hero-sub reveal">
       I'm Ezekiel, a frontend and Firebase developer building fast, modern,
-      SEO ready websites for local businesses that want to be found and trusted online.
+      SEO ready websites for businesses that want to be found and trusted online.
     </p>
     <div class="hero-actions reveal">
       <a href="work.html" class="btn btn-primary">See my work</a>
@@ -178,22 +174,28 @@
   <section class="pricing" id="pricing">
     <p class="eyebrow reveal">// pricing</p>
     <h2 class="reveal">Starting from</h2>
+
+    <div class="currency-toggle reveal" id="currencyToggle" role="group" aria-label="Choose currency">
+      <button class="curr-btn active" data-currency="ngn">₦ NGN</button>
+      <button class="curr-btn" data-currency="usd">$ USD</button>
+    </div>
+
     <div class="pricing-grid">
       <div class="price-card reveal">
         <h3>Landing Page</h3>
-        <p class="price">From ₦60,000</p>
+        <p class="price" data-ngn="From ₦60,000" data-usd="From $180">From ₦60,000</p>
         <p class="price-desc">A single, focused page built to convert, ideal for a new or small offer.</p>
       </div>
       <div class="price-card reveal featured">
         <span class="tag">Most popular</span>
         <h3>Full Business Website</h3>
-        <p class="price">From ₦150,000</p>
+        <p class="price" data-ngn="From ₦150,000" data-usd="From $400">From ₦150,000</p>
         <p class="price-desc">Multiple pages, SEO foundations, and everything your business needs to be found and trusted online.</p>
       </div>
       <div class="price-card reveal">
         <h3>E-commerce Store</h3>
-        <p class="price">From ₦300,000</p>
-        <p class="price-desc">A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000.</p>
+        <p class="price" data-ngn="From ₦300,000" data-usd="From $800">From ₦300,000</p>
+        <p class="price-desc" data-ngn="A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000." data-usd="A full online store, product catalog, cart, and checkout. Add an admin dashboard for +$150.">A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000.</p>
       </div>
       <div class="price-card reveal">
         <h3>Custom Build</h3>
@@ -201,6 +203,10 @@
         <p class="price-desc">Dashboards, bookings, or other custom features, scoped around what your business actually needs.</p>
       </div>
     </div>
+
+    <p class="pricing-note reveal">
+      I work with clients across Nigeria and internationally, across time zones, with secure payment via Paystack or Payoneer.
+    </p>
   </section>
 
   <!-- ============ FINAL CTA ============ -->
@@ -215,9 +221,8 @@
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer-top">
-    <a href="index.html" class="logo">Rolla<span>Dev</span></a>
+    <a href="#" class="logo">Rolla<span>Dev</span></a>
     <nav class="footer-links">
-      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="services.html#pricing">Pricing</a>
@@ -227,7 +232,7 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 RollaDev. All rights reserved.</span>
-    <span class="mono">home</span>
+    <span class="mono">index.html</span>
   </div>
 </footer>
 

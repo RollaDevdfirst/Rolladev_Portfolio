@@ -240,8 +240,8 @@ h2 {
 .hero-photo {
     margin-top: 56px;
     width: 100%;
-    max-width: 520px;
-    aspect-ratio: 1/1;
+    max-width: 720px;
+    aspect-ratio: 16/9;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
@@ -829,6 +829,39 @@ h2 {
     color: var(--text-muted);
     font-size: 13.5px;
     text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.currency-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.curr-btn {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: none;
+    border: 1px solid var(--border-strong);
+    color: var(--text-muted);
+    padding: 8px 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.curr-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.curr-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
 /* ============================================

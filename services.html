@@ -38,7 +38,6 @@
 <header class="nav" id="nav">
   <a href="index.html" class="logo">Rolla<span>Dev</span></a>
   <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
     <a href="work.html">Work</a>
     <a href="services.html" aria-current="page">Services</a>
     <a href="services.html#pricing">Pricing</a>
@@ -54,7 +53,7 @@
 
   <!-- ============ PAGE INTRO ============ -->
   <section class="page-intro">
-    <p class="eyebrow reveal">// services</p>
+    <p class="eyebrow reveal">// services.html</p>
     <h1 class="reveal">What I build, and how</h1>
     <p class="hero-sub reveal">
       Straightforward web development for small businesses, no jargon, no overselling.
@@ -145,22 +144,28 @@
   <section class="pricing" id="pricing">
     <p class="eyebrow reveal">// pricing</p>
     <h2 class="reveal">Starting from</h2>
+
+    <div class="currency-toggle reveal" id="currencyToggle" role="group" aria-label="Choose currency">
+      <button class="curr-btn active" data-currency="ngn">₦ NGN</button>
+      <button class="curr-btn" data-currency="usd">$ USD</button>
+    </div>
+
     <div class="pricing-grid">
       <div class="price-card reveal">
         <h3>Landing Page</h3>
-        <p class="price">From ₦60,000</p>
+        <p class="price" data-ngn="From ₦60,000" data-usd="From $180">From ₦60,000</p>
         <p class="price-desc">A single, focused page built to convert, ideal for a new or small offer.</p>
       </div>
       <div class="price-card reveal featured">
         <span class="tag">Most popular</span>
         <h3>Full Business Website</h3>
-        <p class="price">From ₦150,000</p>
+        <p class="price" data-ngn="From ₦150,000" data-usd="From $400">From ₦150,000</p>
         <p class="price-desc">Multiple pages, SEO foundations, and everything your business needs to be found and trusted online.</p>
       </div>
       <div class="price-card reveal">
         <h3>E-commerce Store</h3>
-        <p class="price">From ₦300,000</p>
-        <p class="price-desc">A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000.</p>
+        <p class="price" data-ngn="From ₦300,000" data-usd="From $800">From ₦300,000</p>
+        <p class="price-desc" data-ngn="A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000." data-usd="A full online store, product catalog, cart, and checkout. Add an admin dashboard for +$150.">A full online store, product catalog, cart, and checkout. Add an admin dashboard for +₦100,000.</p>
       </div>
       <div class="price-card reveal">
         <h3>Custom Build</h3>
@@ -170,6 +175,7 @@
     </div>
     <p class="pricing-note reveal">
       Final pricing depends on scope. Every project starts with a quick conversation so the quote actually fits what you need, not a guess.
+      I work with clients across Nigeria and internationally, across time zones, with secure payment via Paystack or Payoneer.
     </p>
   </section>
 
@@ -187,7 +193,6 @@
   <div class="footer-top">
     <a href="index.html" class="logo">Rolla<span>Dev</span></a>
     <nav class="footer-links">
-      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="services.html#pricing">Pricing</a>
@@ -197,7 +202,7 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 RollaDev. All rights reserved.</span>
-    <span class="mono">services</span>
+    <span class="mono">services.html</span>
   </div>
 </footer>
 

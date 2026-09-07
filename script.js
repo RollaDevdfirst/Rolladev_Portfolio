@@ -65,6 +65,28 @@ if (contactForm) {
 }
 
 // =========================================
+// CURRENCY TOGGLE (index.html and services.html)
+// Swaps price text between the ngn and usd data attributes.
+// =========================================
+const currencyToggle = document.getElementById('currencyToggle');
+
+if (currencyToggle) {
+  const currBtns = currencyToggle.querySelectorAll('.curr-btn');
+  const priceEls = document.querySelectorAll('[data-ngn]');
+
+  currBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const currency = btn.dataset.currency;
+      priceEls.forEach(el => {
+        el.textContent = el.dataset[currency];
+      });
+    });
+  });
+}
+
+// =========================================
 // PROJECT FILTERS (work.html only)
 // =========================================
 const filterChips = document.querySelectorAll('#filters .chip');
