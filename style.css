@@ -345,8 +345,8 @@ h2 {
 .hero-photo {
     margin-top: 56px;
     width: 100%;
-    max-width: 720px;
-    aspect-ratio: 16/9;
+    max-width: 420px;
+    aspect-ratio: 1/1;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
